@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ИЗМЕНИТЬ: Заголовок вкладки браузера -->
+    <title>Femme Forward — Молодежная инициатива за гендерное равенство</title>
+    
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Femme Forward</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Главная</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#events" class="nav-link">Мероприятия</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- ИЗМЕНИТЬ: Ссылка на форму присоединения или доната -->
+                <a href="#contact" class="btn btn-primary btn-sm">Присоединиться</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Открыть меню">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер (Hero) -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Молодежное движение за права женщин
+                </div>
+                <!-- ИЗМЕНИТЬ: Главный заголовок -->
+                <h1 class="hero-title">Расширяем возможности женщин. Создаем равное будущее.</h1>
+                <!-- ИЗМЕНИТЬ: Описание под заголовком -->
+                <p class="hero-description">
+                    Femme Forward — это молодежная инициатива, продвигающая гендерное равенство, лидерство и права женщин через образование, менторство и социальные кампании.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Наши проекты</a>
+                    <a href="#about" class="btn btn-secondary">Узнать больше</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5000">5000+</span>
+                        <span class="stat-label">Участниц и сторонников</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">30+</span>
+                        <span class="stat-label">Проведенных ивентов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">15+</span>
+                        <span class="stat-label">Партнерских организаций</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-card-decoration"></div>
+                <!-- ИЗМЕНИТЬ: Изображение для Hero секции -->
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Молодежь Femme Forward" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас (About) -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Кто мы такие</span>
+                <h2 class="section-title">Движение, созданное молодежью для молодежи</h2>
+                <p class="section-description">
+                    Мы верим, что изменения начинаются с голоса каждого человека. Наша цель — устранить системные барьеры и дать каждой девушке инструменты для реализации ее потенциала.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="card about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Наша миссия</h3>
+                    <p>Продвижение права каждой женщины на образование, равную оплату труда, безопасность и участие в принятии решений на всех уровнях общества.</p>
+                </div>
+
+                <div class="card about-card">
+                    <div class="card-icon">👁️</div>
+                    <h3>Наше видение</h3>
+                    <p>Мир, в котором гендер больше не определяет возможности человека, а лидерство девушек признается и поддерживается во всех сферах.</p>
+                </div>
+
+                <div class="card about-card">
+                    <div class="card-icon">💜</div>
+                    <h3>Наши ценности</h3>
+                    <p>Инклюзивность, солидарность, непрерывное развитие, прозрачность и активное участие молодежи в социальных изменениях.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты (Projects) -->
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Что мы делаем</span>
+                <h2 class="section-title">Наши ключевые инициативы</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Проект 1 -->
+                <article class="card project-card">
+                    <div class="project-image-container">
+                        <!-- ИЗМЕНИТЬ: Картинка проекта 1 -->
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Менторская программа" class="project-image">
+                        <span class="project-tag">Менторство</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>EmpowHer Mentorship</h3>
+                        <p>Программа наставничества, объединяющая опытных женщин-лидеров и девушек-студенток для развития карьеры и Soft Skills.</p>
+                        <a href="#contact" class="project-link">Подробнее &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Проект 2 -->
+                <article class="card project-card">
+                    <div class="project-image-container">
+                        <!-- ИЗМЕНИТЬ: Картинка проекта 2 -->
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Образовательные воркшопы" class="project-image">
+                        <span class="project-tag">Образование</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>STEM for Girls</h3>
+                        <p>Серия бесплатных воркшопов и интенсивов по программированию, анализу данных и робототехнике для девушек в школах.</p>
+                        <a href="#contact" class="project-link">Подробнее &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Проект 3 -->
+                <article class="card project-card">
+                    <div class="project-image-container">
+                        <!-- ИЗМЕНИТЬ: Картинка проекта 3 -->
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Кампании по информированию" class="project-image">
+                        <span class="project-tag">Адвокация</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Safe Spaces Campaign</h3>
+                        <p>Информационная кампания по созданию безопасных и поддерживающих пространств в университетах и на рабочих местах.</p>
+                        <a href="#contact" class="project-link">Подробнее &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мероприятия (Events) -->
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Присоединяйтесь к нам</span>
+                <h2 class="section-title">Предстоящие мероприятия</h2>
+            </div>
+
+            <div class="events-list">
+                <!-- Событие 1 -->
+                <div class="card event-card">
+                    <div class="event-date">
+                        <!-- ИЗМЕНИТЬ: Дата события -->
+                        <span class="day">15</span>
+                        <span class="month">ОКТ</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-type">Онлайн-вебинар</span>
+                        <!-- ИЗМЕНИТЬ: Название и описание события -->
+                        <h3>Женское лидерство в XXI веке</h3>
+                        <p>Панельная дискуссия с участием основательниц стартапов и общественных деятелей.</p>
+                        <div class="event-meta">
+                            <span>🕒 18:00 - 19:30</span>
+                            <span>📍 Zoom</span>
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <!-- ИЗМЕНИТЬ: Ссылка для регистрации -->
+                        <button class="btn btn-outline register-btn" data-event="Женское лидерство">Зарегистрироваться</button>
+                    </div>
+                </div>
+
+                <!-- Событие 2 -->
+                <div class="card event-card">
+                    <div class="event-date">
+                        <!-- ИЗМЕНИТЬ: Дата события -->
+                        <span class="day">28</span>
+                        <span class="month">ОКТ</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-type">Офлайн-воркшоп</span>
+                        <!-- ИЗМЕНИТЬ: Название и описание события -->
+                        <h3>Практикум: Публичные выступления и уверенность</h3>
+                        <p>Интерактивный тренинг по преодолению синдрома самозванца и развитию навыков презентации.</p>
+                        <div class="event-meta">
+                            <span>🕒 15:00 - 18:00</span>
+                            <span>📍 Молодежный Центр, Зал А</span>
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <button class="btn btn-outline register-btn" data-event="Публичные выступления">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты (Contact) -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-wrapper card">
+                <div class="contact-info">
+                    <span class="section-subtitle">Свяжитесь с нами</span>
+                    <h2>Давайте менять мир вместе!</h2>
+                    <p>Хотите стать волонтером, предложить партнерство или задать вопрос? Напишите нам, и мы ответим в течение 24 часов.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <!-- ИЗМЕНИТЬ: Ваш email -->
+                            <div>
+                                <strong>Email:</strong>
+                                <p>hello@femmeforward.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <!-- ИЗМЕНИТЬ: Локацию -->
+                            <div>
+                                <strong>Локация:</strong>
+                                <p>Алматы / Астана, Казахстан (и Онлайн)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-title">Мы в соцсетях:</div>
+                    <div class="social-links">
+                        <!-- ИЗМЕНИТЬ: Ссылки на ваши соцсети -->
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">Instagram</a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://telegram.org" target="_blank" class="social-icon" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Анна Иванова" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Электронная почта</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема обращения</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Выберите тему</option>
+                                <option value="volunteer">Хочу стать волонтером</option>
+                                <option value="partner">Партнерство / Спонсорство</option>
+                                <option value="event">Вопрос по мероприятию</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Расскажите немного о себе или вашем предложении..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить сообщение</button>
+                    </form>
+                    <div class="form-feedback" id="form-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">Femme Forward</span>
+                </a>
+                <p>Молодежная инициатива, объединяющая лидеров будущего за гендерное равенство и права женщин.</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#events">Мероприятия</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Будьте в курсе</h4>
+                <p>Подпишитесь на нашу дайджест-рассылку, чтобы получать анонсы воркшопов и новостей.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Ваш Email" required>
+                    <button type="submit" class="btn btn-primary">ОК</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year"></span> Femme Forward. Все права защищены. Сделано с любовью к переменaм.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
+</body>
+</html>
